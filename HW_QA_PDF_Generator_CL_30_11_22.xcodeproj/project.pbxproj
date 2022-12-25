@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214C6078293A3E3E00D47E6F /* container_for_convert_to_new_version_swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214C6077293A3E3E00D47E6F /* container_for_convert_to_new_version_swift.swift */; };
 		21AC93102937F34C0040D0AF /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC930F2937F34C0040D0AF /* main.swift */; };
+		21AC931C2939651C0040D0AF /* trash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21AC931B2939651C0040D0AF /* trash.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		214C6077293A3E3E00D47E6F /* container_for_convert_to_new_version_swift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = container_for_convert_to_new_version_swift.swift; sourceTree = "<group>"; };
 		21AC930C2937F34C0040D0AF /* HW_QA_PDF_Generator_CL_30_11_22 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HW_QA_PDF_Generator_CL_30_11_22; sourceTree = BUILT_PRODUCTS_DIR; };
 		21AC930F2937F34C0040D0AF /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		21AC931629391E650040D0AF /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		21AC931B2939651C0040D0AF /* trash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trash.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 			isa = PBXGroup;
 			children = (
 				21AC930F2937F34C0040D0AF /* main.swift */,
+				214C6077293A3E3E00D47E6F /* container_for_convert_to_new_version_swift.swift */,
+				21AC931629391E650040D0AF /* Media.xcassets */,
+				21AC931B2939651C0040D0AF /* trash.swift */,
 			);
 			path = HW_QA_PDF_Generator_CL_30_11_22;
 			sourceTree = "<group>";
@@ -94,6 +102,7 @@
 				TargetAttributes = {
 					21AC930B2937F34C0040D0AF = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = "";
 					};
 				};
 			};
@@ -120,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				214C6078293A3E3E00D47E6F /* container_for_convert_to_new_version_swift.swift in Sources */,
+				21AC931C2939651C0040D0AF /* trash.swift in Sources */,
 				21AC93102937F34C0040D0AF /* main.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -161,8 +172,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -221,8 +234,10 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -244,6 +259,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -253,6 +270,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				ENABLE_APP_SANDBOX = NO;
+				ENABLE_USER_SELECTED_FILES = readwrite;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
